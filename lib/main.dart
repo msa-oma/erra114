@@ -35,11 +35,16 @@ class MyApp extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25.0),
+                image: const DecorationImage(
+                  image: AssetImage('asset/bur.jpg'),
+                  fit: BoxFit.cover,
+                ),
               ),
-              child: Image.asset(
-                'asset/bur.jpg',
-                fit: BoxFit.fitWidth,
-              ),
+              // child:
+              // Image.asset(
+              //   'asset/bur.jpg',
+              //   fit: BoxFit.contain,
+              // ),
             ),
             const Text(
               'Burger Mix Combo',
